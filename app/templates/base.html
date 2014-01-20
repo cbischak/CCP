@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>The Choreographers Collaboration Project</title>
+    <!-- Base Carousel and CSS Implementation -->
+	<link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/carousel.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+	  <!--Navbar-->
+	  <body>
+		  <div class="navbar-wrapper">
+		       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+		       <div class="container">
+		<div class="navbar-wrapper">
+	      <div class="container">
+	        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+	          <div class="container">
+	            <div class="navbar-header">
+	              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	              </button>
+	              <a class="navbar-brand" href="#">Choreographers Collaboration Project</a>
+	            </div>
+	            <div class="navbar-collapse collapse">
+	              <ul class="nav navbar-nav">
+	                <li class="active"><a href="#">Home</a></li>
+	                <li><a href="#about">About</a></li>
+	                <li><a href="#contact information">Contact Us</a></li>
+	                <li><a href="#class information">Classes</a></li>
+					<li><a href="#Photos">Photos</a></li>
+					<li><a href="#Season Information">2013-2014 Season</a></li>
+					<li><a href="#Blog">Blog</a></li>
+					<li><a href="#Socail Media">Social Media</a></li>
+	                  </ul>
+	                </li>
+	              </ul>
+	            </div>
+	          </div>
+	        </div>
+      <div class="row">
+        <div class="span12">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+    </div>   
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="docs-assets/js/holder.js"></script>
+  </body>
+</html>
