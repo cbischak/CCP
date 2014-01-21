@@ -1,77 +1,73 @@
 {% extends "base.html" %}
-{% block content %}   
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active"> <img src="static/image/dancer-sil.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Contact Information</h1>
-              <p class="lead">Contact Infomration</p>
-            </div>
-          </div>
+{% block content %}
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="static/images/image_4.jpg">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Classes.</h1>
+          <p>Find out more about class offerings for adults and childern!</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
         </div>
-        </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a> <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a> 
       </div>
-    <!-- /.carousel -->
-    
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-      <!-- START THE FEATURETTES -->
-    <div class="container marketing"> 
-      <div class="featurette"> 
-		<img class="featurette-image pull-right" src="img/capTech.png">
-        <h3 class="featurette-heading">Consulting & Development Intern <span class="muted">CapTech Consulting</span></h3>
-        <span class="label-info"><h4>May 2013 - August 2013</h4> </span>
-        <p class="lead">Worked in a team of 6 interns to create a web-based business management application. Interfaced directly with key stakeholders to define the problem, gather requirements, prototype, and deliver a customized solution. Developed back-end services in Java that applied a RESTful JSON interface to communicate with front-end JavaScript structured with backbone.js. Utilized Agile SCRUM as our software development methodology and presented bi-monthly deliverables to a board of employees.</p>
-      </div>
-      <hr class="featurette-divider">
-      <div class="featurette"> <img class="featurette-image pull-left" src="img/lockheed.png">
-        <h2 class="featurette-heading">College Student Intern <br><span class="muted">Lockheed Martin Corporation</span></h2>
-        <span class="label-info"><h4>June 2012 - August 2012</h4> </span>
-        <p class="lead">Conducted software release testing and used Microsoft Visual Studio to find and fix bugs in C++ code. Worked with a testing team to organize our efforts into an efficient and thorough process. Updated software user manual and help files.</p>
-      </div>
-      <hr class="featurette-divider">
-      <div class="featurette"> <img class="featurette-image pull-right" src="img/cyTech.png">
-      <h2 class="featurette-heading">Systems Integrator <br><span class="muted">CyTech Services</span></h2>
-      <span class="label-info"><h4>Summer 2010 - Summer 2011</h4></span>
-        <p class="lead">Member of a small team that designed, built, tested, and delivered a military helmet-mounted, 360-degree, video-capture system. Interacted with team members, customers, contractors, and suppliers. Also assisted in production of change management materials for the video-capture system. Customized company website. </p>
-      </div>
-      <hr class="featurette-divider">
-      <div class="featurette"> <img class="featurette-image pull-left" src="img/pwcps.png">
-      <h2 class="featurette-heading">Technical Specialist Assistant <br><span class="muted">Prince William County Public Schools</span></h2>
-      <span class="label-info"><h4>June 2009 - June 2010</h4></span>
-        <p class="lead">Maintained high school PCs and network. Worked with Windows and Novell. Performed basic hardware repair, resolved audio/video problems and frequently interacted with employees to solve additional computing problems.</p>
-      </div>
-  </div>
-      <!-- /END THE FEATURETTES -->
-      
-      <!-- InstanceEndEditable -->
-      <!--  FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Alexander Fabian &middot; <!--<a href="#">Privacy</a> &middot; <a href="#">Terms</a>--></p>
-      </footer>
     </div>
-   <!-- /.container -->
-   
-   
-  <script src="http://code.jquery.com/jquery.js"></script> 
-  <script src="js/bootstrap.min.js"></script>
-  <script>   
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
-    </script>
-   <!-- <script src="file:///C|/Users/ALEX/Documents/Work/CapTech/assets/js/holder/holder.js"></script> -->
-  </body>
-<!-- InstanceEnd --></html>
+    <div class="item">
+      <img src="static/images/image 2.jpg">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>2013-2014 Season</h1>
+          <p>Dancing in non-traditional venues</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="static/images/image 3.jpg">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Latest News</h1>
+          <p>Find out more about what's happening with CCP</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
+
+<!-- Futhrur Information etc.
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-4">
+      <h2>Winter Classes</h2>
+      <p>Winter Classes currently are running from January 11-March 29, 2014</p>
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <h2>Upcoming Performances</h2>
+      <p>March 8th: Athenaeum<br>May 17th: ACA Celebration<br>May 24th: John Carlyle Park </p>
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <h2>Latest News</h2>
+      <p>Find out more about all the latest CCP happenings.</p>
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+  
   <!-- CSS JS Implementation -->
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
